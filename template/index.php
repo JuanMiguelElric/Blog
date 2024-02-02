@@ -49,6 +49,7 @@
 
             </div>
         </div>
+        <?php include_once './info.php' ?>
 
     </div>
         <script src="{{ asset('js/index.js') }}"></script>

@@ -17,8 +17,14 @@ class Informacoes
                 'id'=>3,
                 'title'=>'Criação do novo Genoma Humano',
                 'tags'=>['Ciencia','Biologia','humanos']
+            ],
+            [
+                'id'=>4,
+                'title'=>'Ser Humano obtém mais um dente',
+                'tags'=>['Odontologia','Dente','Evolução']
             ]
         ];
+        return $post;
         
     }
 }

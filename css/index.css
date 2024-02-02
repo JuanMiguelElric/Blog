@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.categoria {
+    display: inline-block; /* Isso faz com que cada categoria fique em linha */
+    margin-right: 10px; /* Adicione margem à direita para espaçamento entre as categorias */
+}

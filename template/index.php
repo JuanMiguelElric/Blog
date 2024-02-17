@@ -46,11 +46,24 @@
                     foreach($categorias as $categoria):?>
                         <div class="categoria p-2"><?php echo $categoria ?></div>
                     <?php endforeach ;?>
+                
 
             </div>
         </div>
-        <?php include_once './info.php' ?>
-
+        <div class="row mt-5">
+            <?php 
+                include_once '../informacoes/informacoes.php';
+                $post = new Informacoes ;
+                $Blog = $post->Components();
+                foreach($Blog as $postagem):?>
+                    <div class="col"> 
+                        <h4><?php echo $postagem['title']?></h4>
+                        <p><?php echo $postagem['descricaobasica']?></p>
+                        
+                    </div>
+                <?php endforeach ;?>
+            
+       
     </div>
         <script src="{{ asset('js/index.js') }}"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
